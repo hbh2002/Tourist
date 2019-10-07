@@ -1,5 +1,8 @@
 <template>
-  <div>home</div>
+  <div class="home">
+  	<h3>home</h3>
+	<router-link to='/list'>List</router-link>
+  </div>
 </template>
 
 <script>
@@ -8,4 +11,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style>
+	.home{
+		font-size: 40px;
+	}
+</style>
