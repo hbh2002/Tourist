@@ -4,7 +4,7 @@
   	<home-swiper></home-swiper>
   	<home-icons></home-icons>
   	<home-recomm></home-recomm>
-  	113311332
+  	<home-related></home-related>
   </div>
 </template>
 
@@ -14,13 +14,15 @@
 	import HomeSwiper from './components/Swiper'
 	import HomeIcons from './components/Icons.vue'
 	import HomeRecomm from './components/Recomm.vue'
+	import HomeRelated from './components/Related.vue'
 	export default {
   		name: 'Home',
   		components:{ 
   			HomeHeader,
   			HomeSwiper,
   			HomeIcons,
-  			HomeRecomm
+  			HomeRecomm,
+  			HomeRelated
   		}
 	}
 
