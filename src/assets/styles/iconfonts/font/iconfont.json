@@ -1,0 +1,51 @@
+{
+  "id": "1445827",
+  "name": "Tourist",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "vue项目去哪儿网手机app矢量图标库",
+  "glyphs": [
+    {
+      "icon_id": "569811",
+      "name": "全球",
+      "font_class": "quanqiu",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "584090",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "781634",
+      "name": "下箭头",
+      "font_class": "sanjiaodown",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "2675116",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "6170748",
+      "name": "返回",
+      "font_class": "fanhui2",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "9299084",
+      "name": "右箭头",
+      "font_class": "aright",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

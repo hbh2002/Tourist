@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-  	<h3>home</h3>
-	<router-link to='/list'>List</router-link>
+  	<home-header></home-header>
+  	<home-swiper></home-swiper>
+  	<home-icons></home-icons>
+  	<home-recomm></home-recomm>
+  	113311332
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Home'
-}
+	//导入局部组件
+	import HomeHeader from './components/Header'
+	import HomeSwiper from './components/Swiper'
+	import HomeIcons from './components/Icons.vue'
+	import HomeRecomm from './components/Recomm.vue'
+	export default {
+  		name: 'Home',
+  		components:{ 
+  			HomeHeader,
+  			HomeSwiper,
+  			HomeIcons,
+  			HomeRecomm
+  		}
+	}
+
 </script>
 
 <style>
-	.home{
-		font-size: 40px;
-	}
+
 </style>
