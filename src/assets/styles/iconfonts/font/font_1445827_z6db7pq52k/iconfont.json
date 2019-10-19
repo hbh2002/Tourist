@@ -34,6 +34,13 @@
       "unicode_decimal": 58930
     },
     {
+      "icon_id": "4025615",
+      "name": "星星-03-01",
+      "font_class": "xingxing--",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
       "icon_id": "6170748",
       "name": "返回",
       "font_class": "fanhui2",

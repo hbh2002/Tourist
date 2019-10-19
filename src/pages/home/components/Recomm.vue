@@ -115,6 +115,7 @@
 
 <style lang="stylus" scoped>
 	@import "~styles/variable.styl";
+	@import "~styles/public.styl";
 	.recomm
 		margin: .22rem 0;
 		background-color: #fff;
@@ -131,7 +132,6 @@
 					vertical-align: top;
 				.title-desc
 					height: .44rem;
-					margin-left: .08rem;
 					font-size: .32rem;
 					line-height: .44rem;
 			.title-right
@@ -176,6 +176,8 @@
 					color: $textColor;
 					font-size: $fontSize;
 					line-height: .32rem;
+					min-width: 0;
+					hide()
 				.hotsale-price
 					color: #616161;
 					font-size: $fontSize;
