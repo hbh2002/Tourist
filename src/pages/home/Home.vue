@@ -5,6 +5,8 @@
   	<home-icons></home-icons>
   	<home-recomm></home-recomm>
   	<home-related></home-related>
+  	<home-recommend></home-recommend>
+  	<home-footer></home-footer>
   </div>
 </template>
 
@@ -15,6 +17,8 @@
 	import HomeIcons from './components/Icons.vue'
 	import HomeRecomm from './components/Recomm.vue'
 	import HomeRelated from './components/Related.vue'
+	import HomeRecommend from './components/Recommend.vue'
+	import HomeFooter from './components/Footer.vue'
 	export default {
   		name: 'Home',
   		components:{ 
@@ -22,7 +26,9 @@
   			HomeSwiper,
   			HomeIcons,
   			HomeRecomm,
-  			HomeRelated
+  			HomeRelated,
+  			HomeRecommend,
+  			HomeFooter
   		}
 	}
 

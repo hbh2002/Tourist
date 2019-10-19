@@ -11,7 +11,7 @@
 			</router-link>
 		</div>
 		<ul class="recomm-content">
-			<li class="content-item" v-for="item of dataList" :key="item.id">
+			<li class="content-item" v-for="item of recommList" :key="item.id">
 				<router-link to="">
 					<div class="hotsale-tag" v-if="item.tag">
 						<img :src="item.tag" class="hotsale-img" alt="">
@@ -36,7 +36,7 @@
 		name: "HomeRecomm",
 		data () {
 			return {
-				dataList: [
+				recommList: [
 					{
 						id: "0001",
 						tag: "http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",

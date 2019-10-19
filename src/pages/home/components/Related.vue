@@ -187,7 +187,7 @@
 	@import "~styles/variable.styl";
 	@import "~styles/public.styl";
 	.related
-		margin: .22rem 0;
+		margin: .22rem 0 0;
 		background-color: #fff;
 		.related-title //标题
 			display: flex;

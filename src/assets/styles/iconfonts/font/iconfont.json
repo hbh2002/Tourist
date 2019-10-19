@@ -34,6 +34,13 @@
       "unicode_decimal": 58930
     },
     {
+      "icon_id": "2718125",
+      "name": "飞机 (1)",
+      "font_class": "feiji",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
       "icon_id": "4025615",
       "name": "星星-03-01",
       "font_class": "xingxing--",
@@ -41,11 +48,39 @@
       "unicode_decimal": 58903
     },
     {
+      "icon_id": "4715192",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "5732103",
+      "name": "宿舍_公寓",
+      "font_class": "sushe_gongyu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
       "icon_id": "6170748",
       "name": "返回",
       "font_class": "fanhui2",
       "unicode": "e616",
       "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7761398",
+      "name": "更多",
+      "font_class": "expanding",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8303864",
+      "name": "提示小图标",
+      "font_class": "tishixiaotubiao",
+      "unicode": "e661",
+      "unicode_decimal": 58977
     },
     {
       "icon_id": "9299084",

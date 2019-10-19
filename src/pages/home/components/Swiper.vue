@@ -33,18 +33,18 @@
 					}
 				},
 				swiperList: [
-				{
-					id:1,
-					src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/4ee887fbd9982813f1463965192ec174.jpg_750x200_b554748b.jpg'
-				},
-				{
-					id:2,
-					src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/c3635f8f6ac6a40f5069cd1b2b896100.jpg_750x200_0e548e3b.jpg'
-				},
-				{
-					id:3,
-					src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/06e65ace8dce3638e847b04e975489d1.jpg_750x200_a2dcb0a4.jpg'
-				}
+					{
+						id:"001",
+						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/4ee887fbd9982813f1463965192ec174.jpg_750x200_b554748b.jpg'
+					},
+					{
+						id:"002",
+						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/c3635f8f6ac6a40f5069cd1b2b896100.jpg_750x200_0e548e3b.jpg'
+					},
+					{
+						id:"003",
+						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/06e65ace8dce3638e847b04e975489d1.jpg_750x200_a2dcb0a4.jpg'
+					}
 				]
 			}
 		}
