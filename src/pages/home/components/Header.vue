@@ -8,7 +8,7 @@
 			</router-link>
 		</div>
 		<div class="header_right">
-			<router-link to="">
+			<router-link to="/city">
 				<span class="nav_city_padding">{{this.city}}<i class="iconfont">&#xe6b5;</i></span>
 			</router-link>
 		</div>
