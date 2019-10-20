@@ -1,8 +1,8 @@
 <template>
 	<div class="homeSwiper">
-		<swiper :options="swiperOption">
+		<swiper :options="swiperOption" v-if="list.length">
 		    <!-- slides -->
-		    <swiper-slide v-for="item of swiperList" :key="item.id">
+		    <swiper-slide v-for="item of list" :key="item.id">
 		    	<router-link to="">
 		    		<img :src="item.src" />
 		    	</router-link>
@@ -16,6 +16,9 @@
 <script>
 	export default{
 		name:'HomeSwiper',
+		props: {
+			list: Array
+		},
 		data () {
 			return {
 				swiperOption: {
@@ -31,21 +34,7 @@
 				　　　　	delay: 3000, //设置间隔时间
 				　　		disableOnInteraction: false
 					}
-				},
-				swiperList: [
-					{
-						id:"001",
-						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/4ee887fbd9982813f1463965192ec174.jpg_750x200_b554748b.jpg'
-					},
-					{
-						id:"002",
-						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/c3635f8f6ac6a40f5069cd1b2b896100.jpg_750x200_0e548e3b.jpg'
-					},
-					{
-						id:"003",
-						src:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/06e65ace8dce3638e847b04e975489d1.jpg_750x200_a2dcb0a4.jpg'
-					}
-				]
+				}
 			}
 		}
 	}

@@ -9,7 +9,7 @@
 		</div>
 		<div class="header_right">
 			<router-link to="">
-				<span class="nav_city_padding">北京<i class="iconfont">&#xe6b5;</i></span>
+				<span class="nav_city_padding">{{this.city}}<i class="iconfont">&#xe6b5;</i></span>
 			</router-link>
 		</div>
 	</div>
@@ -17,7 +17,10 @@
 
 <script>
 	export default{
-		name:'HomeHeader'
+		name: 'HomeHeader',
+		props: {
+			city:String
+		}
 	}
 </script>
 

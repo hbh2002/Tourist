@@ -2,7 +2,7 @@
 	<div class="recommend">
 		<h2 class="recommend-title">周末去哪儿</h2>
 		<div class="recommend-content">
-			<div class="product-item" v-for="item of recommendList" :key="item.id">
+			<div class="product-item" v-for="item of list" :key="item.id">
 				<router-link to="">
 					<div class="product-img">
 						<img :src="item.src" alt="">
@@ -23,39 +23,8 @@
 <script>
 	export default {
 		name: "HomeRecommend",
-		data () {
-			return {
-				recommendList: [{
-					id: '001',
-					src: "http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
-					name: "京城周末撒欢",
-					desc: "在帝都过周末，不仅仅是城中游！"
-				},
-				{
-					id: '002',
-					src: "http://img1.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg",
-					name: "京城溜娃必去",
-					desc: "德智体美劳全面发展的亲子日，这些地方该去看看…"
-				},
-				{
-					id: '003',
-					src: "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
-					name: "帝都必打卡",
-					desc: "来北京必去的景点非这些地方莫属"
-				},
-				{
-					id: '004',
-					src: "http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg",
-					name: "登高望远秋色佳",
-					desc: "山顶满眼彩色，此情此景醉了"
-				},
-				{
-					id: '005',
-					src: "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-					name: "寻找北京的皇城范儿",
-					desc: "数百年的宫廷庙宇，至今依旧威严霸气"
-				}]
-			}
+		props: {
+			list: Array
 		}
 	}	
 </script>
@@ -73,7 +42,7 @@
 		.product-img
 			overflow: hidden;
 			height: 0;
-			padding-bottom: 36.5%;
+			padding-bottom: 37%;
 			img
 				width: 100%;
 		.product-info

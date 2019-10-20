@@ -37,6 +37,9 @@
 <script>
 	export default {
 		name:"HomeIcon",
+		props: {
+			list: Array
+		},
 		data () {
 			return {
 				swiperOption: {
@@ -45,65 +48,13 @@
 						clickable: true,
 						type: "bullets"
 					}
-				},
-				iconsList: [
-					{
-						id: '001',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-						intro: '景点门票'
-					},
-					{
-						id: '002',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
-						intro: '故宫'
-					},
-					{
-						id: '003',
-						src: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-						intro: '北京必游'
-					},
-					{
-						id: '004',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png',
-						intro: '水上乐园'
-					},
-					{
-						id: '005',
-						src: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-						intro: '一日游'
-					},
-					{
-						id: '006',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png',
-						intro: '古北水镇'
-					},
-					{
-						id: '007',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-						intro: '动植物园'
-					},
-					{
-						id: '008',
-						src: 'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png',
-						intro: '奥林匹克塔'
-					},
-					{
-						id: '009',
-						src: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/b4511345827006994aa1980a3886f0ac.png',
-						intro: '北京世园会'
-					},
-					{
-						id: '010',
-						src: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/bf88c62458044ca2ef9d733690eef3fc.png',
-						intro: '优惠券'
-					}
-				]
+				}
 			}
 		},
 		computed: { //计算属性判断页数
 			pages () {
 				const pages = [];
-				this.iconsList.forEach((item,index) => {
+				this.list.forEach((item,index) => {
 					const page = Math.floor(index/8);
 					if(!pages[page]) {
 						pages[page] = [];
