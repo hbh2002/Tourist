@@ -2,7 +2,7 @@
 	<div class="header">
 		<router-link to="" class="heade_left"><i class="iconfont">&#xe616;</i></router-link>
 		<div class="header_input">
-			<router-link to="seek">
+			<router-link to="">
 				<i class="iconfont">&#xe632;</i>
 				<span>输入城市/景点/游玩主题</span>
 			</router-link>
