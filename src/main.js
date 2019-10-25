@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 导入Vuex
+import store from './store'
 // 解决移动端click点击事件300毫秒延迟效果
 import fastClick from 'fastclick'
 // 轮播图组件
@@ -23,6 +25,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

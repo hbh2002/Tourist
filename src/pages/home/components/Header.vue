@@ -16,18 +16,17 @@
 </template>
 
 <script>
+	import { mapState } from 'vuex'
 	export default{
 		name: 'HomeHeader',
-		props: {
-			city:String
+		computed: {
+			...mapState({city:'city'})
 		}
 	}
 </script>
 
 <style lang="stylus" scoped>
 	@import '~styles/variable.styl'
-	.nav_city_padding
-		padding: 0 .22rem;
 	.header
 		display: flex;
 		height: .88rem;
@@ -59,4 +58,7 @@
 				padding: 0 .20rem;
 		.header_right
 			float: right;
+			.nav_city_padding
+				min-width: 1.04rem;
+				padding: 0 .22rem;
 </style>
