@@ -9,7 +9,7 @@
 		<div class="related-content"> <!-- 内容 -->
 			<ul class="content-list">
 				<li class="list-item" v-for="item of list" :key="item.id">
-					<router-link to="">
+					<router-link :to="'/details/' + item.id">
 						<div class="item-imgcon">
 							<img :src="item.bigImg">
 						</div>
