@@ -82,8 +82,8 @@
 		justify-content: center;
 		text-align: center;
 		.item
-			font-size: .31rem;
-			padding: .048rem 0;
+			font-size: .28rem;
+			padding: .038rem 0;
 			color: $bgColorAll;
 			cursor: pointer;
 </style>

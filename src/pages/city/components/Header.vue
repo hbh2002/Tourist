@@ -22,6 +22,7 @@
 		color: #fff;
 		font-size: .32rem;
 		position: relative;
+		z-index: 5;
 		.exit
 			overflow: hidden;
 			position: absolute;

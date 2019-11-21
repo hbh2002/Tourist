@@ -30,7 +30,7 @@
 			showHeader () {
 				const boxTop = document.documentElement.scrollTop
 				if(boxTop > 60){
-					let opacity = boxTop / 180
+					let opacity = boxTop / 120
 					opacity = opacity > 1 ? 1 : opacity
 					this.showAbs = false
 					this.styleOpacity = { opacity }
@@ -39,10 +39,10 @@
 				}				
 			}
 		},
-		activated () {
+		mounted () {
 			window.addEventListener('scroll',this.showHeader)
 		},
-		deactivated () {
+		unmounted () {
 			window.removeEventListener('scroll',this.showHeader)
 		}
 	}

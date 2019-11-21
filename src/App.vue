@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <keep-alive>
+    <keep-alive exclude="Details">
       <!-- 根据当前路由地址显示对应的页面内容 -->
+      <!-- exclude 设置某一页面不缓存 -->
       <router-view/>
     </keep-alive>
   </div>

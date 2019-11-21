@@ -12,15 +12,19 @@
 			<div class="area">
 				<div class="area-title border-top-bottom">热门城市</div>
 				<div class="area-content">
-					<div class="button-wrapper" v-for="item of hotCity" :key="item.id">
-						<div class="button" @click="handCityClick(item.name)">{{item.name}}</div>
+					<div class="button-wrapper" 
+					v-for="item of hotCity" :key="item.id" 
+					@click="handCityClick(item.name)">
+						<div class="button">{{item.name}}</div>
 					</div>
 				</div>
 			</div>
 			<div class="area" v-for="(item, key) of cityList" :key="key" :ref="key">
 				<div class="area-title border-top-bottom">{{key}}</div>
-				<div class="item-list" v-for="innerItem of item" :key="innerItem.id">
-					<div class="item" @click="handCityClick(innerItem.name)">{{innerItem.name}}</div>
+				<div class="item-list" 
+				v-for="innerItem of item" :key="innerItem.id"
+				@click="handCityClick(innerItem.name)">
+					<div class="item">{{innerItem.name}}</div>
 				</div>
 			</div>
 		</div>
@@ -55,7 +59,8 @@
 			}
 		},
 		mounted () {
-			this.scroll = new Bscroll(this.$refs.wrapper)
+			// this.scroll = new Bscroll(this.$refs.wrapper)
+			this.scroll = new Bscroll(this.$refs.wrapper, {click:true})
 		}
 	}
 </script>

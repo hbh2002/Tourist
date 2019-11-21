@@ -9,6 +9,8 @@ import store from './store'
 import fastClick from 'fastclick'
 // 轮播图组件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+// 解决部分手机端白屏问题
+import 'babel-polyfill'
 // 导入初始化css样式 全局样式
 import 'styles/reset.css'
 // 解决移动端1像素边框问题

@@ -1,8 +1,11 @@
 <template>
 	<div class="details">
 		<details-header></details-header>
-		<details-banner></details-banner>
-		<details-list :list='list'></details-list>
+		<details-banner
+		:nameTxt='nameTxt' 
+		:bigImg='bigImg'
+		:imgList='imgList'></details-banner>
+		<details-list :list='categoryList'></details-list>
 	</div>
 </template>
 
@@ -10,6 +13,7 @@
 	import DetailsBanner from './components/Banner.vue'
 	import DetailsHeader from './components/Header.vue'
 	import DetailsList from './components/List.vue'
+	import axios from 'axios'
 	export default {
 		name: 'Details',
 		components: {
@@ -19,36 +23,33 @@
 		},
 		data () {
 			return {
-				list: [{
-					id:'001',
-					title: '门票+电子讲解',
-					child: [{
-							title: '香山公园成人票+手机电子讲解',
-							pice: '13.5'
-						}]
-				},{
-					id:'002',
-					title: '联票',
-					child: [{
-							title: '香山公园成人票+手机电子讲解',
-							pice: '14.5'
-						}]
-				},{
-					id:'003',
-					title: '景区讲解服务',
-					child: [{
-							title: '香山公园成人票+手机电子讲解',
-							pice: '23.5'
-						}]
-				},{
-					id:'004',
-					title: '一日游',
-					child: [{
-							title: '香山公园成人票+手机电子讲解',
-							pice: '13.5'
-						}]
-				}]
+				nameTxt: '',
+				bigImg: '',
+				imgList: [],
+				categoryList: []
 			}
+		},
+		methods: {
+			getdetails () {
+				axios.get('/api/particulars.json',{
+					params: {
+						id: this.$route.params.id
+					}
+				}).then(this.acquireData)
+			},
+			acquireData (res) {
+				res = res.data
+				if(res.ret && res.data){
+					const data = res.data
+					this.nameTxt = data.name
+					this.bigImg = data.bigImg
+					this.imgList = data.imgList
+					this.categoryList = data.categoryList 
+				}
+			}
+		},
+		mounted () {
+			this.getdetails()
 		}
 	}
 </script>
@@ -57,4 +58,5 @@
 	.details
 		background-color: #eee;
 		box-sizing: border-box;
+		overflow-x: hidden;
 </style>

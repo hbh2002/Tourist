@@ -1,11 +1,11 @@
 <template>
 	<div class="list clear">
 		<div class="list-nav">
-			<div class="item">
-				<span class="active">门票</span>
+			<div class="item"  @click="dataShow = true">
+				<span :class="dataShow ? 'active' : ''">门票</span>
 			</div>
-			<div class="item">
-				<span>一日游</span>
+			<div class="item" @click="dataShow = false">
+				<span :class="!dataShow ? 'active' : ''">一日游</span>
 			</div>
 		</div>
 		<div class="list-item">
@@ -31,6 +31,11 @@
 		name: 'DetailsList',
 		props: {
 			list: Array
+		},
+		data () {
+			return {
+				dataShow: true
+			}
 		}
 	}
 </script>
@@ -68,6 +73,7 @@
 				margin-bottom: .18rem;
 				background: #fff;
 				border-top: .01rem solid #eee;
+				box-sizing: border-box;
 				.item-title
 					padding-left: .25rem;
 					font-size: .32rem;
@@ -76,6 +82,7 @@
 					color: #333;
 					text-indent: .4rem;
 					margin-bottom: .1rem;
+					box-sizing: border-box;
 					position: relative;
 					.icon-img
 						width: .36rem;

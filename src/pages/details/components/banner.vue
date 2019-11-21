@@ -5,8 +5,8 @@
 				<div class="banner-img">
 					<img src="http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_600x330_fbe0867a.jpg" class="item-img">
 				</div>
-				<div class="info-num"><span class="iconfont">&#xe60a;</span>35</div>
-				<div class="info-desc">香山公园(AAAA景区)</div>
+				<div class="info-num"><span class="iconfont">&#xe60a;</span>{{imgList.length}}</div>
+				<div class="info-desc">{{nameTxt}}</div>
 			</div>
 			<!-- 信息部分 -->
 			<div class="info">
@@ -44,21 +44,29 @@
 				</div>
 			</div>
 		</div>
-		<carousel :imgs="imgs" v-show="imgStatus" @close="unshowBanner"></carousel>
+		<animation>
+			<carousel :imgs="imgList" v-show="imgStatus" @close="unshowBanner"></carousel>
+		</animation>
 	</div>
 </template>
 
 <script>
-	import Carousel from 'public/carousel/carousel.vue'
+	import Carousel from 'public/carousel/carousel'
+	import Animation from 'public/animation/Animation'
 	export default {
 		name: 'DetailsBanner',
 		components: {
-			Carousel
+			Carousel,
+			Animation
+		},
+		props: {
+			nameTxt: String,
+			bigImg: String,
+			imgList: Array
 		},
 		data () {
 			return {
-				imgStatus: false,
-				imgs: ['http://img1.qunarzz.com/sight/p0/1605/ef/efe2e4fba923956090.water.jpg_r_800x800_c2ea0aaa.jpg','http://img1.qunarzz.com/sight/p0/1605/1e/1e864e25f9898c5f90.water.jpg_r_800x800_424642d9.jpg']
+				imgStatus: false
 			}
 		},
 		methods: {

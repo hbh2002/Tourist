@@ -67,7 +67,7 @@
 			}
 		},
 		mounted () {
-			this.scroll = new Bscroll(this.$refs.search)
+			this.scroll = new Bscroll(this.$refs.search, {click:true})
 		}
 	}
 </script>
@@ -78,6 +78,8 @@
 		background-color: $bgColorAll;
 		padding: .1rem .16rem;
 		box-sizing: border-box;
+		position: relative;
+		z-index: 5;
 		.city-search
 			width: 100%;
 			height: .6rem;
