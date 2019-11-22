@@ -10,7 +10,7 @@
 		</div>
 		<div class="header-feix" v-show="!showAbs" :style="styleOpacity">
 			<router-link to="/" class="exit"><i class="iconfont">&#xe616;</i></router-link>
-			<h1 calss="title">香山公园</span></h1>
+			<h1 calss="title">香山公园</h1>
 		</div>
 	</div>
 </template>
