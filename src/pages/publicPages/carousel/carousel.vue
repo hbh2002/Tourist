@@ -1,5 +1,5 @@
 <template>
-	<div class="carousel" @click="unshowBanner">
+	<div class="carousel" @click="unshowBanner"  @touchmove.prevent>
 		<div class="item-swiper">
 			<swiper :options="swiperOption">
 			    <!-- slides -->

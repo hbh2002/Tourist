@@ -81,6 +81,7 @@
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
+		z-index: 1;
 		.item
 			font-size: .28rem;
 			padding: .038rem 0;
